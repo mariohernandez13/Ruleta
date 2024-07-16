@@ -12,13 +12,53 @@ body {
     text-align: center;
 }
 
-.ruleta {
+.ruleta-container {
+    position: relative;
     width: 300px;
     height: 300px;
-    border: 5px solid #333;
+    margin: 0 auto;
+}
+
+.ruleta {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     position: relative;
-    margin: 0 auto;
+    transform: rotate(0deg);
+    transition: transform 4s ease-out;
+}
+
+.segmento {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: left center;
+}
+
+.segmento:nth-child(1) {
+    transform: rotate(0deg) skewY(-30deg);
+}
+
+.segmento:nth-child(2) {
+    transform: rotate(60deg) skewY(-30deg);
+}
+
+.segmento:nth-child(3) {
+    transform: rotate(120deg) skewY(-30deg);
+}
+
+.segmento:nth-child(4) {
+    transform: rotate(180deg) skewY(-30deg);
+}
+
+.segmento:nth-child(5) {
+    transform: rotate(240deg) skewY(-30deg);
+}
+
+.segmento:nth-child(6) {
+    transform: rotate(300deg) skewY(-30deg);
 }
 
 .flecha {
