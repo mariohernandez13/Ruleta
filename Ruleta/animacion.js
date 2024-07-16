@@ -1,9 +1,9 @@
 // Opciones de la ruleta y sus probabilidades
 const opciones = [
-    { name: 'Opción 1', probability: 0.5 },
-    { name: 'Opción 2', probability: 0.3 },
-    { name: 'Opción 3', probability: 0.2 },
-    { name: 'Opción 4', probability: 0 }
+    { name: 'Besito', probability: 0.5 },
+    { name: 'Copa Gratis', probability: 0 },
+    { name: 'Tira otra vez', probability: 0.4 },
+    { name: 'Reto', probability: 0.1 }
 ];
 
 // Referencias a elementos del DOM
